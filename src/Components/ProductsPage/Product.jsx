@@ -11,7 +11,7 @@ import {
   IoStarOutline,
 } from "react-icons/io5";
 import { useCart } from "../../Hooks/useCart";
-import "../../css/Product.css";
+import "../../Css/Product.css";
 import { ProductDetails } from "./ProductDetails";
 import { AlsoMayLike } from "./AlsoMayLike";
 
