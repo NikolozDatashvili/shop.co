@@ -1,0 +1,79 @@
+@media (max-width: 640px) {
+  .imgDivs {
+    max-width: 500px;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+  }
+}
+@media (min-width: 640px) {
+  .dressStyleImg {
+    height: 289px;
+    object-fit: contain;
+  }
+}
+.imgDivs {
+  border-radius: 20px;
+  display: flex;
+  justify-content: end;
+  max-width: 1000px;
+  cursor: pointer;
+}
+
+.dressStyleImg {
+  border-radius: 20px;
+}
+@media (min-width: 900px) and (max-width: 1280px) {
+  .dressStyleImg {
+    width: 100%;
+    object-fit: cover;
+  }
+  .partyDiv,
+  .formalDiv {
+    flex-grow: 0;
+  }
+  .imgDivs {
+    width: 45%;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 900px) {
+  .dressStyleImg {
+    width: 100%;
+    object-fit: cover;
+  }
+  .partyDiv,
+  .formalDiv {
+    flex-grow: 0;
+  }
+  .imgDivs {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1320px) and (max-width: 2000px) {
+  .partyDiv,
+  .formalDiv {
+    flex-grow: 1;
+  }
+}
+@media (min-width: 2000px) {
+  .formalDiv,
+  .partyDiv {
+    flex-grow: 0;
+    width: 80%;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1320px) {
+  .partyDiv,
+  .formalDiv {
+    flex-grow: 0;
+  }
+  .imgDivs {
+    width: 45%;
+  }
+  .dressStyleImg {
+    width: 100%;
+    object-fit: cover;
+  }
+}

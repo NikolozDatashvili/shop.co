@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+body,
+html {
+  height: 100%;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-y: auto;
+}
+#root {
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Satoshi  */
+@font-face {
+  font-family: "Satoshi";
+  src: url("./Fonts/Satoshi-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+/* Integral CF  */
+@font-face {
+  font-family: "Integral CF";
+  src: url("./Fonts/IntegralCF-Regular.otf") format("opentype");
+  font-weight: 900; /* Heavy is usually 900 */
+  font-display: swap;
+}
+
+@theme {
+  --font-satoshi: "Satoshi", ui-sans-serif, system-ui;
+  --font-integral: "Integral CF", sans-serif;
+}

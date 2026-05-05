@@ -1,0 +1,25 @@
+.review-card-wrapper {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(10px);
+  margin-bottom: 0;
+}
+.review-card-wrapper.is-visible {
+  opacity: 1;
+  max-height: 500px; 
+  transform: translateY(0);
+  margin-bottom: 20px;
+}
+.tab-content {
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+.review-input-container {
+  transition:
+    max-height 0.4s ease-in-out,
+    opacity 0.3s ease;
+  overflow: hidden;
+}

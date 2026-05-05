@@ -1,0 +1,63 @@
+.logos {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 50px;
+}
+
+.logos img {
+  height: 35px;
+  width: auto;
+  object-fit: contain;
+}
+@media (min-width: 1024px) {
+  .logos img {
+    height: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .logos {
+    justify-content: space-between;
+    padding: 40px 100px;
+    flex-wrap: nowrap;
+  }
+
+  .logos img {
+    height: 40px;
+  }
+}
+@media (max-width: 550px) {
+  .logos img {
+    padding: 8px;
+
+    flex-direction: row;
+  }
+}
+.logos img {
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+.logos img:hover {
+  scale: 1.02;
+}
+
+@keyframes startAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(100);
+  }
+}
+
+.animateStart {
+  animation: startAnim 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}

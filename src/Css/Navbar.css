@@ -1,0 +1,94 @@
+@media (width<=1280px) {
+  li {
+    font-size: 14px;
+  }
+}
+
+div > ul > li {
+  cursor: pointer;
+}
+div > ul > li:hover {
+  color: black;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.navLi:hover {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  color: black;
+}
+.navLi {
+  color: #4a5565;
+  font-weight: 500;
+}
+li,
+.navLi {
+  transition: 0.6s;
+  font-family: "satoshi";
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+}
+
+@keyframes slowFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+.animate-slideInRight {
+  animation: slideInRight 0.3s ease-out forwards;
+}
+.animate-rotateIn {
+  animation: rotateIn 0.2s ease-out;
+}
+
+.animate-slideOutRight {
+  animation: slideOutRight 0.3s ease-in forwards;
+}
+.animate-slowFade {
+  animation: slowFadeIn 0.4s ease-out 0.1s both;
+}
