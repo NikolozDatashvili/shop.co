@@ -217,4 +217,3 @@ shuffledForFlags.slice(10, 20).forEach((p) => (p.topSeller = true));
 shuffledForFlags.slice(20, 40).forEach((p) => (p.isMans = true));
 
 export const products = rawProducts;
-console.log(JSON.stringify(products));
